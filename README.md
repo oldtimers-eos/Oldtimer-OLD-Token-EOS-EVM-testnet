@@ -16,9 +16,20 @@ Then, proceed with installing dependencies:
 yarn install
 ```
 
+### Customize
+
+If you wish to create your own erc-20 token (DAO compatible) on Trust (EOS EVM) testnet, please follow the instructions. 
+
+In contracts folder you can find a OldtimerToken.sol document.
+
+Open the document in your favorite code editor (our recommendation is Visual Studio Code).
+
+On line 10 & 11, you can change name, symbol and total supply of your token.
+
+
 ### Compile
 
-Compile the smart contracts with Hardhat:
+Compile the smart contract with Hardhat:
 
 ```sh
 $ yarn compile
@@ -26,7 +37,7 @@ $ yarn compile
 
 ### Deploy
 
-Deploy the contracts to TRUST (EOS EVM) testnet:
+Deploy the contract to TRUST (EOS EVM) testnet:
 
 ```sh
 $ yarn deploy --network trustevm
