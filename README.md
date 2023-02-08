@@ -1,6 +1,6 @@
-# Oldtimer (OLD) token on TRUST (EOS EVM) testnet
+# Oldtimer (OLD) token on EOS EVM testnet
 
-Deployment of Oldtimer (OLD) token (DAO compatible) on Trust (EOS EVM) testnet.
+Deployment of Oldtimer (OLD) token (DAO compatible) on EOS EVM testnet.
 
 OldTimers Offer - A step towards decentralization of the classic vehicle market. (https://oldtimersoffer.com/)
 
@@ -18,7 +18,7 @@ yarn install
 
 ### Customize
 
-If you wish to create your own erc-20 token (DAO compatible) on Trust (EOS EVM) testnet, please follow the instructions. 
+If you wish to create your own erc-20 token (DAO compatible) on EOS EVM testnet, please follow the instructions. 
 
 In contracts folder you can find a OldtimerToken.sol document.
 
@@ -37,9 +37,9 @@ $ yarn compile
 
 ### Deploy
 
-Deploy the contract to TRUST (EOS EVM) testnet:
+Deploy the contract to EOS EVM testnet:
 
 ```sh
-$ yarn deploy --network trustevm
+$ yarn deploy --network eosevm
 ```
 
