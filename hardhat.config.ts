@@ -19,11 +19,8 @@ dotenvConfig({ path: resolve(__dirname, "./.env") });
 const chainIds = {
   goerli: 5,
   hardhat: 31337,
-  kovan: 42,
   mainnet: 1,
-  rinkeby: 4,
-  ropsten: 3,
-  trustevm: 15555,
+  eosevm: 15556,
   polygon: 137,
   mumbai: 80001,
 };
@@ -37,7 +34,7 @@ if (!mnemonic) {
 
 
 function getChainConfig(network: keyof typeof chainIds): NetworkUserConfig {
-  const url: string = "https://api.testnet-dev.trust.one";
+  const url: string = "https://api-testnet.trust.one";
   return {
     accounts: {
       count: 10,
@@ -65,10 +62,7 @@ const config: HardhatUserConfig = {
       chainId: chainIds.hardhat,
     },
     goerli: getChainConfig("goerli"),
-    kovan: getChainConfig("kovan"),
-    rinkeby: getChainConfig("rinkeby"),
-    ropsten: getChainConfig("ropsten"),
-    trustevm: getChainConfig("trustevm"),
+    eosevm: getChainConfig("eosevm"),
     polygon: getChainConfig("polygon"),
     mumbai: getChainConfig("mumbai"),
   },
